@@ -1,0 +1,6 @@
+<svg id="timeico" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <path id="Path_7" data-name="Path 7" d="M0,30V0H30V30Z" fill="none"/>
+  <g id="Group_12" data-name="Group 12" transform="translate(2.5 2.5)">
+    <path id="Path_8" data-name="Path 8" d="M26.833,14.333a12.5,12.5,0,1,0,12.5,12.5A12.5,12.5,0,0,0,26.833,14.333ZM30.95,32.717l-5.366-5.366V19.333h2.5v6.983l4.634,4.634Z" transform="translate(-14.333 -14.333)" fill="#454545"/>
+  </g>
+</svg>

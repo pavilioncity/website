@@ -1,0 +1,30 @@
+.books-container {
+    padding: 12rem 0 5rem;
+    max-width: 750px;
+    margin: auto;
+    min-height: 60rem;
+
+        article {
+            padding: 16px 0 32px;
+            border-bottom: 1px solid $color-white-light-darker;
+
+            .btn-sec {
+                margin-top: 1rem;
+            }
+    }
+}
+
+.book-img {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-self: flex-start;
+
+    @media screen and (max-width: 575px) {
+        max-width: 240px;
+    }
+}
+
+.img-cont {
+    display: flex;
+}

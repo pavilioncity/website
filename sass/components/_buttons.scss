@@ -1,0 +1,111 @@
+.navbar-toggler {
+    padding: 5px;
+    &-icon{
+        margin: auto;
+        width: 3.5rem;
+        height: 2.7rem;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.navbar-nav {
+    .nav-item {
+        .btn.primary {
+            background-color: $color-primary;
+            color: $color-white-light;
+            @include btnbasic;
+            font-size: 1.6rem;
+            
+    
+            &:hover{
+                background-color: $color-primary-darker;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .btn.primary {
+                padding: 1.2rem 2.4rem
+
+            }
+        }
+    }
+    
+}
+
+.ctas{
+    &>*{
+        display: block;
+        font-size: 1.6rem;
+    }
+    .primary {
+        @include btnbasic;
+        background-color: $color-primary;
+        color: $color-white-light;
+
+        &:hover{
+            background-color: $color-primary-darker;
+        }
+    }
+    .secondary {
+        @include btnbasic;
+        background-color: $color-white-light;
+        color: $color-primary;
+        margin-top: 2rem;
+        padding: 16px 48px;
+
+
+        &:hover{
+            background-color: $color-white-light-darker;
+        }
+    }
+
+    @media only screen and (min-width: 540px) {
+        .secondary {
+            margin-top: 0;
+    
+            &:hover{
+                background-color: $color-white-light-darker;
+            }
+        }
+    }
+}
+
+.books-container {
+
+.primary {
+    @include btnbasic;
+    background-color: $color-primary;
+    color: $color-white-light;
+
+    &:hover{
+        background-color: $color-primary-darker;
+    }
+}
+.secondary {
+    @include btnbasic;
+    // background-color: $color-white-light;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    margin-top: 12px;
+    padding: 16px 32px;
+
+    &:hover{
+        background-color: $color-primary;
+        color: #fff;
+    }
+
+    &:active{
+        background-color: $color-blue-dark;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 575px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+    }
+}
+
+}

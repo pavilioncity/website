@@ -1,0 +1,315 @@
+.limit {
+    width: 95%;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 992px) {
+        width: 90rem;
+        margin: 0 auto;
+    }
+}
+
+.welcome__section{
+    background-color: $color-white-light-darker;
+
+    &-container{
+        padding: 8.8rem 3.2rem 5.6rem;
+        margin: 0 auto;
+        background-color: $color-primary-lightest;
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+
+        .content--pic {
+            grid-row: 2 / span 1;
+            margin-bottom: 3.2rem;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 645px) {
+        padding-bottom: 8.8rem;
+
+        &-container {
+            padding: 5.4rem 4.8rem 4rem;
+            width: 80%;
+            max-width: 65.6rem;
+            margin: -16rem auto 0;
+            box-shadow: 0 1.2rem 4rem rgba($color-black-dark, 0.25);
+            grid-template-columns: repeat(3, 1fr);
+            border-radius: 5px;
+            z-index: 100;
+            position: relative;
+
+            h2 {
+                grid-column: span 3;
+            }
+            
+            .content--text {
+                padding-left: 2.4rem;
+                grid-column: 2 / span 2;
+            }
+
+            .content--pic {
+                grid-row: 2 / span 1;
+                grid-column: 1 / span 1;
+                margin-top: 8px;
+                // align-self: ;
+                margin-bottom: 0;
+                overflow: hidden;
+                max-height: 20rem;
+
+    
+                img {
+                    height: 100%;
+                    width: auto;
+                    margin: 0 auto;
+                    max-height: 20rem;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        &-container {
+            box-sizing: border-box;
+            padding: 5.6rem;
+            max-width: 80rem;
+            margin: -16rem auto 0;
+            box-shadow: 0 1.2rem 4rem rgba($color-black-dark, 0.25);
+            column-gap: 3.2rem;
+            border-radius: 5px;
+
+            .content--text {
+                display: flex;
+                align-items: center;
+                padding-left: 0;
+
+                p {
+                    margin-bottom: 0;
+                };
+            }
+
+            .content--pic {
+                grid-row: 2 / span 1;
+                max-width: 68rem;
+                display: block;
+    
+                img {
+                    height: 100%;
+                    margin: 0 auto;
+                    max-height: 32rem;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+/******************************/
+/************About  ***********/
+/******************************/
+
+.about {
+    padding: 8.8rem 2rem 6.4rem;
+    background-color: $color-primary-darker;
+
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 5.6rem;
+        margin: 2.4rem auto 0;
+        width: 95%;
+        max-width: 48rem;
+    }
+
+    &__card {
+        box-shadow: 0 1.6rem 3.2rem rgba($color-blue-dark, 0.30);
+        padding: 4rem;
+        // text-align: center;
+        background-color: $color-primary;
+        color: $color-white-light;
+
+        &--pic {
+            display: flex;
+            // justify-content: center;
+            align-content: center;
+            min-height: 12.8rem;
+        }
+
+        &--text {
+ 
+        }
+
+        &.vision {
+            grid-column: span 2;
+        }
+
+        &.mission {
+            grid-column: span 2;
+        }
+    }
+    
+    @media only screen and (min-width:768px) {
+        .wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            max-width: 92rem;
+            gap: 4rem;
+        }
+        
+        &__card {
+
+            &.vision {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+    
+            &.mission {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+        }
+    }
+}
+
+/******************************/
+/************With Us***********/
+/******************************/
+.with-us{
+    position: relative;
+    display: grid;
+    grid-template-columns: 3.6rem auto;
+
+    .pictwo {
+        background-image: linear-gradient(to right, rgba($color-primary, 0.55),rgba($color-primary, 0.55)), url('../img/worship.jpg');
+        height: 100%;
+        grid-column: 1/ span 1;
+        background-size: cover;
+        background-position: right;
+    }
+
+    .content {
+        padding: 8.8rem 3.2rem 6.4rem;
+
+        .info {
+
+            .at {
+                margin-top: 2rem;
+                p {
+                    margin-bottom: 0.7rem;
+                    img {
+                        width: 2.5rem;
+                        margin-right: 0.8rem;
+                    }
+                    .label {
+                        margin-left: 0.3rem;
+                    }
+                }
+            }
+
+            .schedule {
+                background-color: $color-primary-lightest;
+                margin-top: 2rem;
+                padding: 3rem;
+
+                .day {
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+
+                    .time {
+                        img {
+                            width: 2rem;
+                            margin-right: 0.5rem;
+                        }
+                    }
+
+                }
+                
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: minmax(4rem, 9.6rem) 14.4rem minmax(auto, 50rem);
+
+        .pictwo {
+            background-image: linear-gradient(to right, rgba($color-primary, 0.3),rgba($color-primary, 0.3)), url('../img/worship.jpg');
+            height: 100%;
+            grid-column: 2/ span 1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            // filter: blur(3px);
+        }
+
+        .content {
+                .schedule {
+                    .day {
+
+
+                        .weekday {
+                            display: inline-block;
+                        }
+
+                        .time {
+                            display: inline-block;
+
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        grid-template-columns: minmax(14.4rem, 17.6rem) 17.6rem minmax(auto, auto);
+
+        .pictwo {
+            background-image: linear-gradient(to right, rgba($color-primary, 0.3),rgba($color-primary, 0.3)), url('../img/worship.jpg');
+            height: 100%;
+            grid-column: 2/ span 1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            // filter: blur(3px);
+        }
+
+        .content {
+            width: 97%;
+            max-width: 90rem;
+            margin: 0 auto;
+
+                .schedule {
+                    .day {
+
+
+                        .weekday {
+                            display: inline-block;
+                        }
+
+                        .time {
+                            display: inline-block;
+
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+

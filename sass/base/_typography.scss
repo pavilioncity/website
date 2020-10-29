@@ -1,0 +1,255 @@
+
+
+html {
+    font-size:10px;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Raleway';
+    color: $color-black-headings;
+}
+
+.navbar{
+    &-brand{
+        font-family: 'Montserrat';
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    &-nav {
+        li {
+            font-size: 1.8rem;
+            a{
+                color: $color-black-dark;
+            }
+        }
+    }
+}
+
+.header{
+    .content{
+        color: $color-white-light;
+        text-align: center;
+
+        .main{
+            font-family: 'Montserrat';
+            font-weight: 900;
+            // font-style: italic;
+            font-size: 4rem;
+            line-height: 110%;
+            position: relative;   
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            color: $color-white-light;
+            
+        }
+
+        .aside{
+            font-family: "Raleway";
+            font-size: 1.8rem;
+            margin-bottom: 5.4rem
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .content{
+
+            .main{
+                font-size: 4.8rem;
+                line-height: 100%;
+            }
+        }
+    }
+}
+
+
+
+/******************************/
+/*******Welcome****************/
+/******************************/
+.welcome__section{
+    &-container{
+        
+        h2 {
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+            font-size: 3.2rem;
+
+            &::after{
+                @include afterdash;
+                margin: 0.8rem auto 2.4rem;
+            }
+        }
+
+        .content--text{
+            line-height: 2.4rem;
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            padding: 0 1.6rem;
+        
+            .attention {
+                // color: $color-primary;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.about {
+    h2 {
+        @include h2headings;
+        text-align: center;
+        color: $color-white-light;
+
+        &::after{
+            @include afterdash;
+            margin: 0.8rem auto 2.4rem;
+            background-color: $color-white-light;
+        }
+    }
+    
+    &__card {  
+        &--text {
+            h3 {
+                font-family: "Montserrat";
+                font-weight: 700;
+                margin-bottom: 1.6rem;
+                font-size: 2.4rem;
+            }
+        }
+    }     
+}
+
+
+
+.with-us {
+    .content {
+        h2 {
+            font-weight: 700;
+            font-family: "Montserrat";
+            font-size: 3.2rem;
+
+            @media only screen and (min-width: 768px) {
+                font-size: 3.6rem;
+            }
+
+            &::after{
+                @include afterdash;
+                margin: .8rem 0 2.4rem;
+            }
+        }
+
+        .info {
+            p {
+                margin: 0;
+                line-height: 145%;
+            }
+
+            .at {
+                font-weight: 500;
+                color: $color-primary;
+
+                .label {
+                    font-weight: 700;
+                }
+            }
+            
+            .weekday {
+                font-weight: 700;
+                margin: 0;
+            }
+
+            .name {
+                font-style: italic;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+/******************************/
+/*******Welcome****************/
+/******************************/
+footer {
+
+    &>* {
+        color: $color-white-light;
+
+        h2 {
+            font-weight: 700;
+            color: $color-white-light;
+
+            &::after {
+                @include afterdash;
+                width: 3.2rem;
+                background-color: #fff;
+                margin: 0.5rem 0 0.8rem;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                
+                a {
+                    color: $color-white-light;
+                }
+            }
+        }
+    }
+}
+
+article {
+
+    p, ul {
+        @media screen and (min-width: 992px) {
+            font-size: 18px;
+            line-height: 160%;
+        }
+    } 
+
+    .book-title {
+        font-weight: 700;
+        font-size: 24px;
+        // letter-spacing: -0.8px;
+        // font-family: 'Montserrat', sans-serif;
+        text-transform: capitalize;
+        line-height: 1.2;
+    }
+
+    small {
+        font-style: italic;
+        font-size: 14px;
+        color: #555;
+        margin-top: 12px;
+        display: inline-block;
+    }
+
+    .intro {
+        font-size: 16px;
+        line-height: 145%;
+        margin-top: 12px;
+    }
+} 
+
+.books-container {
+    h1 {
+        font-weight: 700;
+        font-family: "Montserrat";
+        font-size: 3.2rem;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 3.6rem;
+        }
+
+        &::after{
+            @include afterdash;
+            margin: .8rem 0 2.4rem;
+        }
+    }
+}
+

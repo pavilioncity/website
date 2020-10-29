@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: Sitemap: https://www.pavilioncitychapel.com/sitemap.xml

@@ -1,0 +1,45 @@
+.header {
+    background-image: linear-gradient(
+        45deg, 
+        rgba(204, 142, 42, 0.2), 
+        rgba(48, 48, 48, 0.3)), 
+        url("../img/headerbg1.jpg");
+    background-position: center 0;
+    min-height: 40rem;
+    background-size: auto 110%;
+    padding: 12rem 3rem 9.6rem;
+    margin-top: 70px;
+    z-index: 50;
+    position: relative;
+
+    .ctas {
+        width: 90%;
+        margin: 3.2rem auto 0rem;
+    }
+
+    @media only screen and (min-width:540px) {
+        padding: 10.5rem 3rem 14.8rem;
+        min-height: 50rem;
+        background-size: cover;
+        background-position: center;
+
+        .ctas {
+            display: flex;
+            justify-content: space-around;    
+            width: 42.4rem;
+        }
+    }
+
+    @media only screen and (min-width: 645px) {
+        background-image: linear-gradient(
+            45deg, 
+            rgba(204, 142, 42, 0.2), 
+            rgba(48, 48, 48, 0.3)), 
+            url("../img/headerbg1.jpg");        // background-attachment: fixed;
+        padding: 14.6rem 3rem 24rem;
+
+        .ctas {
+            width: 46.4rem;
+        }
+    }
+}
